@@ -1,0 +1,32 @@
+package inClass;
+
+import java.util.Scanner;
+
+public class TwoDArray2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		int sum,totalsum;
+		int [][] item = new int[3][3];
+		
+		System.out.println("Enter nine number: ");
+		for(int i=0;i<item.length;i++) {
+			for(int j=0;j<item.length;j++) {
+				item[i][j] = sc.nextInt();
+				System.out.println("i(row) = "+i+" j(column) = "+j+" Value j is "+ item[i][j]);
+				
+			}
+		}
+		//printing array
+		for(int i=0;i<item.length;i++) {
+			for(int j=0;j<item.length;j++) {
+				System.out.println(item[i][j]);
+			}
+		}
+		
+	}
+
+}
