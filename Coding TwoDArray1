@@ -1,0 +1,31 @@
+package inClass;
+
+public class TwoDArray1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int sum,totalsum;
+		int[][] a = {
+						{2,4,6},
+						{1,3,5},
+						{7,8,9}
+					};
+		
+		totalsum=0;
+		for(int i=0; i<a.length;i++)
+		{
+			sum=0;
+			for(int j=0;j<a.length;j++)
+			{
+				System.out.println(a[i][j]);
+				sum=sum+a[i][j];
+			}
+			totalsum=totalsum+sum;//totalsum+=sum
+			
+			System.out.println("Print sum : "+sum);
+			System.out.println("Print total sum : "+totalsum);
+		}
+	}
+
+}
